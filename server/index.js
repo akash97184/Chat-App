@@ -7,8 +7,7 @@ const cors = require('cors');
 
 const socketIO = require('socket.io')(http, {
   cors: {
-      origin: ["http://localhost:3000",
-               "https://chat-app923.netlify.app"]
+      origin: ["https://chat-app923.netlify.app"]
   }
 });
 
