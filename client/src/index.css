@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  width:25%;
+  height:100%;
+  background: #0F172A;
+  padding: 20px;
+}
+
+.chat-section {
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-blend-mode: darken;
+}
+
+.sidebarOpen {
+  display:block;
+  background: #0F172A;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+    position: absolute;
+    width:70%;
+    height:100%;
+    z-index:10;
+    background: #0F172A;
+    padding: 30px;
+    transition: all 0.5s ease;
+
+  }
+  .sidebarOpen {
+    display:block;
+    width:70%;
+    z-index:10;
+    height:100%;
+    background: #0F172A;
+    padding: 25px;
+    transition: all 0.5s ease;
+  }
+}
